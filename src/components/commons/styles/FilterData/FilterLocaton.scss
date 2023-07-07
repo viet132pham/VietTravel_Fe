@@ -1,0 +1,48 @@
+.filter-location-wrapper {
+  border: 1px solid #d3d5d7;
+  border-radius: 4px;
+  padding: 24px 16px;
+  height: max-content;
+  margin-bottom: 24px;
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .input-field {
+    width: 100%;
+    input {
+      margin-bottom: 24px;
+      width: 100%;
+      border-radius: 4px;
+      height: 44px;
+      padding: 3px 10px;
+      outline: none;
+      border: 1px solid #d3d5d7;
+      &:hover {
+        border-color: #0088ff;
+      }
+      &:focus {
+        border-color: #0088ff;
+      }
+    }
+  }
+
+  button {
+    height: 36px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 150px;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 3px 10px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid #d3d5d7;
+    &:hover {
+      color: #fff;
+      background: #0088FF;
+    }
+  }
+}

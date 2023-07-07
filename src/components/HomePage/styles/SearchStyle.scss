@@ -1,0 +1,73 @@
+.search-wrapper {
+  margin-top: 50px;
+  .list-options-search {
+    display: flex;
+    justify-content: center;
+    .item {
+      width: 150px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: orange;
+      padding: 3px 8px;
+      border-radius: 8px;
+      margin-right: 16px;
+    }
+  }
+
+  .search-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .input-wrapper {
+      height: 120px;
+      width: 80%;
+      background-color: #FFFFFF;
+      padding: 12px 16px;
+      border-radius: 6px;
+      position: relative;
+
+      .arrow-top {
+        position: absolute;
+        top: -25px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 25px solid #FFFFFF;
+
+        &.hotel {
+          left: 42%;
+        }
+        &.tour {
+          right: 43%;
+          left: unset;
+        }
+
+      }
+      .label {
+        color: #67747c;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      .MuiInput-root {
+        width: 100%;
+        input {
+          width: calc(100% - 200px)
+        }
+      }
+      .MuiButtonBase-root {
+        background: #0088FF;
+        color: #FFFFFF;
+        font-weight: 500;
+        width: 150px;
+      }
+
+    }
+  }
+
+}

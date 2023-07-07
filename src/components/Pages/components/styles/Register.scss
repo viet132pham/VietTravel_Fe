@@ -1,0 +1,132 @@
+.dialog-register {
+  .MuiPaper-root {
+    width: 1000px;
+    height: 550px;
+    background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2021/12/background-hinh-nen-wallpaper-phong-canh-dep.jpg");
+    background-size: cover;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .head {
+        position: absolute;
+        left: 250px;
+        svg {
+          color: beige;
+          font-size: 32px;
+        }
+        &:hover {
+          svg {
+            color: orangered;
+            cursor: pointer;
+          }
+        }
+      }
+      .close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        background-color: #ff4d4d;
+        cursor: pointer;
+        svg {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+    }
+    .register-container {
+      .register-form {
+        .row {
+          display: flex;
+          color: #ffffff;
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: unset;
+          }
+          .form-input {
+            width: 50%;
+            > div {
+              &:nth-child(2) {
+                width: 100%;
+                input {
+                  border: 1px solid #ffffff;
+                  outline: none;
+                  border-radius: 6px;
+                  background-color: #ffffff;
+                  &:hover {
+                    outline: none;
+                    border-color: #ffffff;
+                  }
+                }
+              }
+            }
+            .txt-label {
+              margin-bottom: 8px;
+            }
+          }
+        }
+        .btn-list {
+          margin-top: 60px;
+          display: flex;
+          justify-content: center;
+          .signup-btn {
+            border-radius: 35px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background-color: orange;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 8px 32px;
+            line-height: 24px;
+            width: 180px;
+            margin-left: 30px;
+            &:hover {
+              background-color: orangered;
+            }
+          }
+          .signin-btn {
+            border-radius: 35px;
+            width: 180px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background-color: orange;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 8px 32px;
+            line-height: 24px;
+            margin-left: 30px;
+            &:hover {
+              background-color: orangered;
+            }
+          }
+        }
+      }
+    }
+  }
+  .MuiSnackbar-root {
+
+    height: 48px;
+    > .MuiPaper-root {
+      width: 500px;
+      height: unset;
+      background-image: none;
+      background-size: unset;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
