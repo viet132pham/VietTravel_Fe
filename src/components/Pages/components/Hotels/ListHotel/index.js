@@ -16,6 +16,7 @@ import {
 import { Button } from "@mui/material";
 import { addCartItem } from "../../Cart/actions/CartActionCallApi";
 import { useLocation } from "react-router-dom";
+import { getCartByUser } from "../../../actions/AccountActionCallApi";
 
 const nf = new Intl.NumberFormat("en");
 
@@ -30,11 +31,14 @@ function ListHotel(props) {
 
   const items = useSelector((state) => state.hotel.items);
 
+  const account = useSelector(state => state.auth.account);
+
   const filter = useSelector((state) => state.hotel.filter);
 
   const [showType, setShowType] = useState("all");
 
   useEffect(() => {
+    dispatch(getCartByUser(account?.userId));
     console.log(name);
     if (name) {
       dispatch({

@@ -15,16 +15,19 @@ import {
 import { Button } from "@mui/material";
 import { addCartItem } from "../../Cart/actions/CartActionCallApi";
 import { hotelBenefits } from "../commons/DataCommon";
+import { getCartByUser } from "../../../actions/AccountActionCallApi";
 const nf = new Intl.NumberFormat("en");
 
 function ItemHotelDetail(props) {
   const [item, setItem] = useState({});
   const history = useHistory();
   const cartId = useSelector((state) => state.cart?.id);
+  const account = useSelector(state => state.auth.account);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(getCartByUser(account?.userId));
     const path = history.location.pathname;
     const id = path?.split("/hotel/detail/")?.[1];
     dispatch(getHotelDetailItem(id)).then((res) => {

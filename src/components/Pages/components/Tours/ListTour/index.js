@@ -17,6 +17,7 @@ import { useHistory } from "react-router-dom";
 import { Button } from "@mui/material";
 import { addCartItem } from "../../Cart/actions/CartActionCallApi";
 import { useLocation } from "react-router-dom";
+import { getCartByUser } from "../../../actions/AccountActionCallApi";
 
 const nf = new Intl.NumberFormat("en");
 
@@ -26,6 +27,7 @@ function ListTour(props) {
   const items = useSelector((state) => state.tour.items);
   const filter = useSelector((state) => state.tour.filter);
   const cartId = useSelector((state) => state.cart?.id);
+  const account = useSelector(state => state.auth.account);
 
   const [showType, setShowType] = useState("all");
 
@@ -34,6 +36,7 @@ function ListTour(props) {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(getCartByUser(account?.userId));
     console.log(name);
     if (name) {
       dispatch({

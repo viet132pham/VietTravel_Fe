@@ -9,16 +9,19 @@ import Footer from "../../../../HomePage/Footer";
 import { handleConvertArr } from "../../../../commons/actions/actionCommons";
 import { getTourDetailItem } from "../actions/ListTourActionCallApi";
 import { addCartItem } from "../../Cart/actions/CartActionCallApi";
+import { getCartByUser } from "../../../actions/AccountActionCallApi";
 const nf = new Intl.NumberFormat("en");
 function ItemTourDetail(props) {
   const [item, setItem] = useState({});
   const history = useHistory();
   const cartId = useSelector((state) => state.cart?.id);
   const trendingTour = useSelector((state) => state.tour.trendingItems);
+  const account = useSelector(state => state.auth.account);
   const [newId, setNewId] = useState('');
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(getCartByUser(account?.userId));
     const path = history.location.pathname;
     const id = path?.split("/tour/detail/")?.[1];
     dispatch(getTourDetailItem(id)).then((res) => {
