@@ -1,0 +1,168 @@
+.hotel-detail-wrapper {
+  .hotel-detail-content-wrapper {
+    margin-bottom: 40px;
+    .bread-scrum {
+      margin-left: 15%;
+      .text {
+        margin-right: 8px;
+        color: #67747c;
+        &:nth-child(1),
+        &:nth-child(2) {
+          &:hover {
+            color: #0088ff;
+            cursor: pointer;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .container {
+      margin: 0 15%;
+    }
+    .product {
+      h4 {
+        margin-right: 8px;
+      }
+      .fa-star {
+        color: #0088ff;
+      }
+      .sub-description {
+        display: flex;
+        align-items: center;
+        i {
+          margin-right: 12px;
+          color: orangered;
+        }
+      }
+      button {
+        color: #ffffff;
+        height: 44px;
+        padding: 8px 12px;
+        background-color: #0088ff;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        background-size: covers;
+      }
+    }
+  }
+}
+.list-room {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  flex-direction: column;
+  .room-item {
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d3d5d7;
+    margin-top: 24px;
+    justify-content: space-between;
+    .image {
+      width: 300px;
+      border: 1px solid #d3d5d7;
+      border-radius: 10px;
+      display: flex;
+      min-height: 250px;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 6px;
+        width: 250px;
+        height: 200px;
+      }
+    }
+    .right-content {
+      width: calc(100% - 300px);
+      display: flex;
+      margin-left: 30px;
+      .col-1 {
+        width: calc(100% - 180px);
+        .name {
+          color: #ff4d4d;
+          font-weight: 600;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        .desc-list {
+          display: flex;
+          flex-wrap: wrap;
+          .sub-col {
+            width: 45%;
+            height: 20px;
+            color: #67747c;
+            margin: 8px;
+          }
+        }
+      }
+      .col-2 {
+        width: 180px;
+        height: 100%;
+        display: block;
+        .btn-add {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button {
+            width: 120px;
+            margin-top: 16px;
+            height: 36px;
+            background-color: orangered;
+            color: #fff;
+            font-weight: 600;
+            border-color: #fff;
+          }
+        }
+        .text-align-center {
+          margin-top: 16px;
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+        }
+        .org-price {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-align: end;
+        }
+        .price-sale {
+          text-align: end;
+          font-weight: 600;
+          color: orangered;
+        }
+      }
+    }
+  }
+}
+.benefit-title {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(3, 18, 26, 1);
+}
+.list-benefit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .item {
+    margin: 16px 0;
+    width: 30%;
+    .type {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(3, 18, 26, 1);
+    }
+    ul {
+      li {
+        margin: 8px 0;
+        color: rgba(3,18,26, 0.8);
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+  }
+}

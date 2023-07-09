@@ -1,0 +1,11 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  .show-total {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+}

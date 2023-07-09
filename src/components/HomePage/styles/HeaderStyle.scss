@@ -1,0 +1,27 @@
+.header-wrapper {
+  background-image: url("https://images2.alphacoders.com/836/836610.jpg?fbclid=IwAR0ZDwjjyE_oItk9vx4kDbrmHMhBLc3SbHONTBr9_DJC07POO7EOsAkrv2A");
+  height: 700px;
+  color: #FFFFFF;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+
+  .slogan {
+    margin-top: 200px;
+    display: block;
+    .content {
+      font-weight: 700;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .sub-content {
+      display: flex;
+      font-weight: 500;
+      justify-content: center;
+    }
+  }
+}

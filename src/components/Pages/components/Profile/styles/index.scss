@@ -1,0 +1,139 @@
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ba68c8;
+}
+
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none;
+}
+
+.profile-button:hover {
+  background: #682773;
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none;
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer;
+}
+
+.labels {
+  font-size: 11px;
+}
+
+.text-header-right {
+  cursor: pointer;
+  &:hover {
+    color: #0088ff;
+  }
+  &.active {
+    padding-bottom: 5px;
+    color: #4caf50;
+    border-bottom: 3px solid #4caf50;
+  }
+}
+.profile-wrapper .order-container {
+  margin-top: 20px;
+}
+
+.profile-wrapper .order-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-wrapper .order-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.profile-wrapper .order-item-details {
+  flex-grow: 1;
+}
+
+.profile-wrapper .order-item-name {
+  font-weight: bold;
+}
+
+.profile-wrapper .order-item-price {
+  margin-top: 5px;
+}
+
+.profile-wrapper .order-item-category {
+  font-size: 12px;
+  color: #777;
+}
+
+.profile-wrapper .order-item-sale {
+  font-weight: bold;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.profile-wrapper .order-item-quantity {
+  margin-top: 5px;
+}
+
+.profile-wrapper .order-item-status {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #007bff;
+}
+.order-item-image img {
+  width: inherit;
+  height: inherit;
+}
+.dialog-result {
+  .title-result {
+    font-weight: 500;
+    text-align: center;
+    i {
+      font-size: 50px;
+      color: #4caf50;
+    }
+  }
+  .text-send-mail {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.MuiPaper-root {
+  width: 350px;
+  height: 300px;
+  h2 {
+    margin-top: 40px;
+  }
+  .MuiDialogActions-root {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      width: 80px;
+    }
+    &:hover {
+      button {
+        background: #ff4d4d;
+        color: #fff;
+      }
+    }
+  }
+}
